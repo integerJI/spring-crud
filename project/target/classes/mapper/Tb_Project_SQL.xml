@@ -4,12 +4,30 @@
 <mapper namespace="com.project.service.dao.ProjectDAO">
 
  <select id="selectProjectList" resultType="projectVO">
-	SELECT 	PRO_ID, 
+	SELECT 	
+		PRO_ID, 
 		PRO_TITLE, 
 		PRO_BODY, 
 		PRO_DATE 
 		FROM TB_PROJECT
 	ORDER BY PRO_ID DESC
  </select>
-
+ 
+<insert id="insertProject">
+	<selectKey resultType="int" keyProperty="proId" order="BEFORE">
+		SELECT NVL(MAX(PRO_ID),0)+1 FROM TB_PROJECT
+	</selectKey>  
+		INSERT INTO TB_PROJECT (
+			PRO_ID, 
+			PRO_TITLE, 
+			PRO_BODY, 
+			PRO_DATE
+		 ) VALUES (
+			#{proId}, 
+			#{proTitle}, 
+			#{proBody},
+			SYSDATE
+		 )
+</insert>
+	
 </mapper>

@@ -33,5 +33,9 @@ public class ProjectVO {
 		this.proDate = proDate;
 	}
 	
+	@Override
+	public String toString() {
+		return "ProjectVO [proId=" + proId + ", proTitle=" + proTitle + ", proBody=" + proBody + ", proDate=" + proDate + "]";
+	}
 	
 }

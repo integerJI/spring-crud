@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=euc-kr" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <!DOCTYPE html>
@@ -11,13 +11,17 @@
 <body>
 <h1>Project List</h1>
 
+<div>
+	[<a href="<c:url value='/projectRegisterForm.do' />">ë“±ë¡</a>]
+</div>
+	
 <table border="1">
 <thead>
   <tr>
-    <th>¹øÈ£</th>
-    <th>Á¦¸ñ</th>
-    <th>º»¹®</th>
-    <th>ÀÛ¼ºÀÏ</th>
+    <th>ë²ˆí˜¸</th>
+    <th>ì œëª©</th>
+    <th>ë³¸ë¬¸</th>
+    <th>ìž‘ì„±ì¼</th>
   </tr>
 </thead>
 <tbody>

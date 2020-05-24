@@ -20,4 +20,10 @@ public class ProjectServiceImpl implements ProjectService {
 	public List<ProjectVO> selectProjectList() throws Exception {
 		return projectMapper.selectProjectList();
 	}	
+
+	@Override
+	public void insertProject(ProjectVO projectVO) {
+		projectMapper.insertProject(projectVO);
+	}
+	
 }
