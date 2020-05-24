@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> <!-- @@@ 매우 중요 @@@ -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<!-- src/main/webapp/WEB-INF/view/projectRegisterForm.jsp -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +9,7 @@
 <title>Home</title>
 </head>
 <body>
-	<h1>Board Register</h1>
+	<h1>Project Register</h1>
 	<c:url var="insertUrl" value="/projectInsert.do" />
 	<form:form commandName="projectVO" action="${insertUrl}" name="projectVO" method="post">
 	<table>
