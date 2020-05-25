@@ -27,10 +27,11 @@
 <tbody>
 <c:forEach var="item" items="${list}">
   <tr>
-    <td>${item.proId}</td>
+    <td>${item.proId}</td> 
     <td>${item.proTitle}</td>
     <td>${item.proBody}</td>
     <td>${item.proDate}</td>
+    [<a href="<c:url value='projectUpdateForm.do' />">수정</a>]
   </tr>
 </c:forEach>
 </tbody>
