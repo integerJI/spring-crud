@@ -22,6 +22,7 @@
     <th>제목</th>
     <th>본문</th>
     <th>작성일</th>
+    <th>수정</th>
   </tr>
 </thead>
 <tbody>
@@ -31,7 +32,7 @@
     <td>${item.proTitle}</td>
     <td>${item.proBody}</td>
     <td>${item.proDate}</td>
-    [<a href="<c:url value='projectUpdateForm.do' />">수정</a>]
+    <td><a href="${path}/projectUpdateForm.do?proId=${item.proId}">수정</a></td>
   </tr>
 </c:forEach>
 </tbody>
