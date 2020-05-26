@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1>Project Register</h1>
-	<c:url var="updateUrl" value="/projectUpdate.do" />
+	<c:url var="updateUrl" value="${path}/projectUpdate.do?proId=${item.proId}" />
 	<form:form commandName="projectVO" action="${updateUrl}" name="projectVO" method="post">
 	<table>
 	<tbody>
