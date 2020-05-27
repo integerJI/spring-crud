@@ -23,6 +23,7 @@
     <th>본문</th>
     <th>작성일</th>
     <th>수정</th>
+    <th>삭제</th>
   </tr>
 </thead>
 <tbody>

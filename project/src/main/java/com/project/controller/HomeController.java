@@ -114,7 +114,7 @@ public class HomeController {
 	 * @return
 	 */
 	@RequestMapping(value = "/projectDelete.do")
-	public String projectDelete(@ModelAttribute("projectVO") int proId, Model model) {
+	public String projectDelete(int proId) {
 
 		projectService.deleteProject(proId);
 		

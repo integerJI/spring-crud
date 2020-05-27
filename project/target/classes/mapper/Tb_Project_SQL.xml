@@ -44,7 +44,7 @@
 	DELETE FROM 
 		TB_PROJECT
 	WHERE
-		PRO_ID = #{proId};
+		PRO_ID = #{proId}
 </delete>
 	
 </mapper>
