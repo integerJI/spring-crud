@@ -14,4 +14,6 @@ public interface ProjectDAO {
 	
 	void updateProject(ProjectVO projectVO);
 	
+	void deleteProject(int proId);
+	
 }

@@ -103,8 +103,20 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/projectUpdate.do")
 	public String projectUpdate(@ModelAttribute("projectVO") ProjectVO projectVO, Model model) {
-		System.out.println(projectVO);
+
 		projectService.updateProject(projectVO);
+		
+		return "redirect:/projectList.do";
+	}
+	
+	/**
+	 * 글을 삭제합니다.
+	 * @return
+	 */
+	@RequestMapping(value = "/projectDelete.do")
+	public String projectDelete(int proId) {
+
+		projectService.deleteProject(proId);
 		
 		return "redirect:/projectList.do";
 	}
