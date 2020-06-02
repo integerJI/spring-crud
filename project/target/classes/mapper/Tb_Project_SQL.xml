@@ -40,11 +40,4 @@
 		PRO_ID = #{proId} 
 </update>
 
-<delete id="deleteProject">
-	DELETE FROM 
-		TB_PROJECT
-	WHERE
-		PRO_ID = #{proId}
-</delete>
-	
 </mapper>
